@@ -1,7 +1,7 @@
 public class VehicleRunner {
     public static void main(String[] args) {
         // testing all available methods on a Vehicle object
-        Vehicle myVehicle = new Vehicle("Generic Vehicle", 6);
+        Vehicle1 myVehicle = new Vehicle1("Generic Vehicle", 6);
         System.out.println(myVehicle.getName());
         System.out.println(myVehicle.getWheels());
         myVehicle.move(10);
@@ -9,7 +9,7 @@ public class VehicleRunner {
         myVehicle.brake();
 
         // testing all available methods on a Car object
-        Car myCar = new Car("Honda Civic", 4, "leather");
+        Car1 myCar = new Car1("Honda Civic", 4, "leather");
         System.out.println(myCar.getName()); // inherited method
         System.out.println(myCar.getWheels()); // inherited method
         System.out.println(myCar.getFabric()); // method ONLY available on Car objects
@@ -20,7 +20,7 @@ public class VehicleRunner {
         myCar.lockDoors(); // method ONLY available on Car objects
 
         // ---- WRITE YOUR BICYCLE TEST CODE BELOW ----
-        Bicycle myBike = new Bicycle("ofo", 2, 10);
+        Bicycle1 myBike = new Bicycle1("ofo", 2, 10);
         System.out.println(myBike.getName());
         System.out.println(myBike.getWheels());
         myBike.move(10);
@@ -35,7 +35,7 @@ public class VehicleRunner {
         // myBike.honk();                                 //line 4
         // myBike.lockDoors();                            //line 5
         
-        Bus mta = new Bus("B16", 4, 20, 25, "Fort Hamilton Pkwy/62 St" );
+        Bus1 mta = new Bus1("B16", 4, 20, 25, "Fort Hamilton Pkwy/62 St" );
         System.out.println(mta.getName());
         System.out.println(mta.getWheels());
         mta.brake();

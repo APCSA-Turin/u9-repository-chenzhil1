@@ -1,7 +1,7 @@
-public class Car extends Vehicle {
+public class Car1 extends Vehicle1 {
     private String fabric;
 
-    public Car(String name, int wheels, String fabric) {
+    public Car1(String name, int wheels, String fabric) {
         super(name, wheels);
         this.fabric = fabric;
     }

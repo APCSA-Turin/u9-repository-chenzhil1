@@ -10,12 +10,8 @@ public class Taxi extends Car {
         return fareCollected;
     }
 
-    public void printTaxi() {
-        System.out.println("Licence PLate: " + this.getLicensePlate());
-        System.out.println("Toll fee: " + this.getTollFee());
-        System.out.println("Passengers: " + this.getPassengers());
-        System.out.println("Electric? " + isElectric());
-        System.out.println("Discount applied? " + isDiscountApplied());
+    public void printInfo() {
+        super.printInfo();
         System.out.println("Fare collected: " + fareCollected);
 
     }
@@ -29,6 +25,22 @@ public class Taxi extends Car {
         }
     }
 
+    public boolean chargeAndDropOffRiders(double farePerRider) {
+        if(getPassengers() > 1) {
+            fareCollected += farePerRider * (getPassengers() - 1);
+            dropOffPassengers(getPassengers() - 1);
+            return true;
+        }
+        return false;
+    }
+    @Override
+    public double highwayParking() {
+      double fee = super.highwayParking();
+      fee += 5.99;
+      System.out.println("Taxi charges extra $5.99 of parking fee");
+      System.out.println("The total will be $" + fee);
+      return fee;
+    }
 
 
 }

@@ -1,8 +1,8 @@
-public class Vehicle {
+public class Vehicle1 {
     private String name;
     private int wheels;
 
-    public Vehicle(String name, int wheels) {
+    public Vehicle1(String name, int wheels) {
         this.name = name;
         this.wheels = wheels;
     }
