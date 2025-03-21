@@ -1,4 +1,4 @@
-public class VehicleRunner {
+public class VehicleRunner1 {
     public static void main(String[] args) {
         // testing all available methods on a Vehicle object
         Vehicle1 myVehicle = new Vehicle1("Generic Vehicle", 6);
