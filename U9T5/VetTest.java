@@ -1,0 +1,38 @@
+package U9T5;
+
+public class VetTest {
+    public static void main(String[] args) {
+        // Vet someVet = new Vet("Animal House");
+        // Dog ben = new Dog("Ben");
+        // Puppy joy = new Puppy("Joy");
+        // Cow moo = new Cow("moo");
+        // System.out.println(someVet.addClient(ben));
+        // System.out.println(someVet.addClient(joy));
+        // System.out.println(someVet.addClient(moo));
+        
+        // System.out.println(someVet.addClient(ben));
+        // System.out.println(someVet.addClient(joy));
+        // System.out.println(someVet.addClient(moo));
+
+        Animal animal = new Animal("Thing");
+        Puppy puppy = new Puppy("Spot");
+        Cow cow = new Cow("Marge");
+        Dog dog = new Dog("Penny");
+        
+        Vet vet = new Vet("Turin");
+        System.out.println("----> Adding each client (successful):");
+        System.out.println(vet.addClient(animal));
+        System.out.println(vet.addClient(puppy));
+        System.out.println(vet.addClient(cow));
+        System.out.println(vet.addClient(dog));
+        System.out.println("----> Adding each client again (unsuccessful):");
+        System.out.println(vet.addClient(animal));
+        System.out.println(vet.addClient(puppy));
+        System.out.println(vet.addClient(cow));
+        System.out.println(vet.addClient(dog));
+        System.out.println("----------> PRINTING CLIENT LIST <----------");
+        vet.printClientList();
+        
+    }
+
+}

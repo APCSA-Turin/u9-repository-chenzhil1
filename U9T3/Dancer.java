@@ -39,5 +39,5 @@ public class Dancer extends Performer {
     @Override
     public String getName(){
         return super.getName() + " is a dancer";
-    }
+    } 
 }
